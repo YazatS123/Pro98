@@ -1,0 +1,13 @@
+def swapFiles():
+    a = input("Please enter file 1: ")
+    b = input("Please enter file 2: ")
+    File1Sample = open(a, "r")
+    File2Sample = open(b, "r")
+    Data1 = File1Sample.read()
+    Data2 = File2Sample.read()
+    File1Change = open(a, "w")
+    File2Change = open(b, "w")
+    File1Change.write(Data2)
+    File2Change.write(Data1)
+    print("Sucess! Files successfully switched!")
+swapFiles()
